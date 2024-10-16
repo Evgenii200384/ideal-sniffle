@@ -15,7 +15,7 @@ import Web3
         self._contract = self.builder.build(key='address', value=self._address).build(key='provider', value=self._provider).connect().construct()
 
     class Builder:
-        def __init__(self, abi: str) -> None:
+        def__init__(self, abi: str) -> None:
             self._options: Dict[str, Any] = dict()
 
             self._abi: str = abi
